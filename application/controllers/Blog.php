@@ -12,18 +12,18 @@ class Blog extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "My Real Title";
-        $data['heading'] = "My Real Heading";
+        $data['title']     = "My Real Title";
+        $data['heading']   = "My Real Heading";
         $data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
-        $data['content'] = 'blog/index';
-
+        $data['content']   = 'blog/index';
         $this->load->view('template', $data);
     }
 
     public function comments()
     {
-        log_message('debug', 'Look at this!');
-        echo 'Look at this!';
+        $this->load->model('blog/blog_model');
+        $data = $this->blog_model->get_last_ten_entries();
+        var_dump($data);
     }
 
     public function shoes($sandals, $id)
