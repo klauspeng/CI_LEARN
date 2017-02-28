@@ -15,7 +15,7 @@ class Blog extends CI_Controller
         $data['title'] = "My Real Title";
         $data['heading'] = "My Real Heading";
         $data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
-        $data['content_text'] = 'blog/index';
+        $data['content'] = 'blog/index';
 
         $this->load->view('template', $data);
     }
