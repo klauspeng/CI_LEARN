@@ -7,12 +7,17 @@
  */
 header("Content-type: text/html; charset=utf-8");
 
-class Blog extends CI_Controller{
+class Blog extends CI_Controller
+{
 
     public function index()
     {
-        log_message('debug', '哈哈哈');
-        echo 'Hello World!';
+        $data['title'] = "My Real Title";
+        $data['heading'] = "My Real Heading";
+        $data['todo_list'] = array('Clean House', 'Call Mom', 'Run Errands');
+        $data['content_text'] = 'blog/index';
+
+        $this->load->view('template', $data);
     }
 
     public function comments()
@@ -23,7 +28,7 @@ class Blog extends CI_Controller{
 
     public function shoes($sandals, $id)
     {
-        echo $sandals,'<br>';
+        echo $sandals, '<br>';
         echo $id;
     }
 }
