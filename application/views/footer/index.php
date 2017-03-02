@@ -1,6 +1,22 @@
+
+</div>
 </body>
+
+<!-- jQuery -->
+<script src="<?=base_url()?>vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="<?=base_url()?>vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="<?=base_url()?>vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="<?=base_url()?>vendor/raphael/raphael.min.js"></script>
+<script src="<?=base_url()?>vendor/morrisjs/morris.min.js"></script>
+<!--<script src="--><?//=base_url()?><!--data/morris-data.js"></script>-->
+
+<!-- Custom Theme JavaScript -->
+<script src="<?=base_url()?>resource/js/sb-admin-2.js"></script>
+
 </html>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>

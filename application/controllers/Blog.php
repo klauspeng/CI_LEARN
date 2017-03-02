@@ -26,6 +26,7 @@ class Blog extends CI_Controller
         var_dump($data);
     }
 
+
     public function shoes($sandals, $id)
     {
         echo $sandals, '<br>';

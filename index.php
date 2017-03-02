@@ -312,4 +312,5 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+ini_set("error_reporting","E_ALL & ~E_NOTICE");
 require_once BASEPATH.'core/CodeIgniter.php';
