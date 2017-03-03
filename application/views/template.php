@@ -8,5 +8,6 @@ $this->load->view($content);
 //加载公共尾部
 $this->load->view('footer/index');
 //加载js
-$this->load->view("js/".$content);
+if ($js)
+    $this->load->view("js/" . $content);
 
