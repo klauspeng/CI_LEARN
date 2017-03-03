@@ -17,12 +17,12 @@ class Youdao extends CI_Controller
 
         $data['title']   = "有道词典查询";
         $data['content'] = 'youdao/index';
-
+        $data['js']      = true;
         if ($q != '') {
             $youdaoApi .= $q;
             $output       = $this->curlGet($youdaoApi);
             $data['data'] = $output;
-            $data['q'] = $q;
+            $data['q']    = $q;
         }
 
         $this->load->view('template', $data);
