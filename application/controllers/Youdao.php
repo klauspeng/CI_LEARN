@@ -48,5 +48,6 @@ class Youdao extends CI_Controller
         //打印获得的数据
         $output = json_decode($output, true);
         return $output;
+
     }
 }
